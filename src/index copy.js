@@ -7,30 +7,19 @@ class Header extends React.Component {
         return (
             <div className="header">
                 <ul>
-                    {/* <li>
+                    <li>
                         <a>
                             <svg>
                                 
                             </svg>
                         </a>
-                    </li> */}
+                    </li>
                     <li>
-                        <img class="header-icon" src="/assets/bull.svg"></img>
-                        <a href="#a">
-                            link a
+                        <a href="https://www.google.com">
+                            Home
                         </a>
                     </li>
-                    <li >
-                        <img class="header-icon" src="/assets/glasses.svg"></img>
-                        <a href="#b">
-                             link b
-                        </a>
-                    </li>
-                    <li >
-                        <a href="c">
-                             link c
-                        </a>
-                    </li>
+                    <li>Beta</li>
                     <li>Gamma</li>
                 </ul>
             </div>
@@ -109,6 +98,7 @@ class Game extends React.Component {
     render() {
         return (
         <div className="game">
+            <Board/>
             <ResetButton/>
             <div className="game-info">
                 <div>{/* status */}</div>
@@ -127,10 +117,13 @@ class App extends React.Component {
         return (
         <div>
             <Header></Header>
-
-            <img id="top-img" src="/assets/robert pan mahdi 1.jpg"></img>
-            <img src="/assets/rpm_2.jpg"></img>
-
+            <content>
+                <Game/>
+            </content>
+            
+            {items.map((val, index) => {
+                return <p key={index}>{val}</p>
+            })}
         </div> 
         );
     }

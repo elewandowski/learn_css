@@ -1,13 +1,29 @@
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+  margin: 0px;
 }
 
 .header {
   padding: 5px;
+  height: 50px;
   width: 100%;
   position: fixed;
-  background-color: rgb(187, 187, 187);
+  background-color: #d4bd4b;
+  box-shadow:20px 20px 50px 10px pink inset;  
+}
+
+.header-icon {
+  height: 14px;
+  width: 14px;
+}
+
+img {
+  width: 100%
+}
+
+.header ul li {
+  display: inline-block;
+  /* width: 10% */
 }
 
 li {
@@ -60,7 +76,7 @@ ol, ul {
 .game {
   display: flex;
   flex-direction: column;
-  padding: 1000px 0px 0px 0px;
+  padding: 77px 0px 0px 0px;
 }
 
 .game-board {
@@ -71,6 +87,25 @@ ol, ul {
   margin-left: 20px;
 }
 
-.reset-button {
-  
+#top-img {
+  padding-top: 4em;
+}
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
 }
