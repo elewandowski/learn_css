@@ -7,13 +7,6 @@ class Header extends React.Component {
         return (
             <div className="header">
                 <ul>
-                    {/* <li>
-                        <a>
-                            <svg>
-                                
-                            </svg>
-                        </a>
-                    </li> */}
                     <li>
                         <img class="header-icon" src="/assets/bull.svg"></img>
                         <a href="#a">
@@ -127,9 +120,19 @@ class App extends React.Component {
         return (
         <div>
             <Header></Header>
-
-            <img id="top-img" src="/assets/robert pan mahdi 1.jpg"></img>
-            <img src="/assets/rpm_2.jpg"></img>
+            <div className="content">
+                <div className="section section-one">
+                    <div className="section-one-content">
+                        <h1 className="content-header1">Here's a cool website</h1>
+                        <p>These are some great artworks by Robert Pan Mahdi</p>
+                        <img className="content-img" src="/assets/robert_pan_mahdi_1.jpg"></img>
+                        <img className="content-img" src="/assets/rpm_2.jpg"></img>
+                    </div>
+                </div>
+                <div className="section section-two">
+                    {/* <img src="/assets/rpm_2.jpg"></img>                     */}
+                </div>
+            </div>
 
         </div> 
         );
