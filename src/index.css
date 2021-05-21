@@ -13,17 +13,9 @@ header {
 }
 
 .headerContent {
-  width: 95%;
-  padding: 0.5em 0;
-  display: inline-block;
+  width: 97%;
+  margin: 0.5em auto;
 }
-
-/* header > * {
-  display: table;
-  padding: auto 0;
-  height: 100%;
-  background-color: red;
-} */
 
 header ul {
   display: inline;
@@ -31,10 +23,11 @@ header ul {
 
 header li {
   /* list-style-type: none; */
-  display: inline-block;
+  display: inline;
   border: 20px;
   margin: 0 10px;
-  background-color: #ddd;
+  background-color: rgb(182, 182, 182);
+  border-radius: 5px;
 }
 
 .headerTitle {
