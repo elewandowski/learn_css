@@ -1,27 +1,39 @@
 import React from "react";
+import "./Header.css";
 
+function Search() {
+  function onSubmit(event) {
+    event.preventDefault();
+    console.log(event.target);
+    // return false;
+  }
+  return (
+    <form class="search" onSubmit={onSubmit}>
+      <input type="text" placeholder="Search.." name="search" />
+      <button type="submit">
+        <i class="fa fa-search">Submit</i>
+      </button>
+    </form>
+  );
+}
 class Header extends React.Component {
   constructor(props) {
     super(props);
     this.links = props.links;
   }
+
   render() {
     return (
       <header>
         <div className="headerContent">
           <div className="headerTitle">Emil's website</div>
-
-          <ul>
+          <Search />
+          <nav>
             {this.links.map((element) => {
               console.log(element);
-              return (
-                <li>
-                  <a href={element.href}>{element.text}</a>
-                </li>
-              );
+              return <a href={element.href}>{element.text}</a>;
             })}
-          </ul>
-          <input id="search" placeholder="search" />
+          </nav>
         </div>
       </header>
     );

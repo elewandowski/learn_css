@@ -1,7 +1,9 @@
 import React from "react";
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import Header from "./Header";
+import MainSection from "./MainSection";
+import Challenge1 from "./Challenge1";
 
 function App() {
   const headerLinks = [
@@ -22,24 +24,7 @@ function App() {
   return (
     <div className="App">
       <Header links={headerLinks}> </Header>
-      <main>
-        <section>
-          <h1> Welcome to Emil's first website</h1>
-          <p>here you'll find all my development work.</p>
-        </section>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </main>
+      <Challenge1 />
     </div>
   );
 }

@@ -1,0 +1,32 @@
+section {
+  padding: 2em;
+}
+
+section.upper {
+  height: 200px;
+  background: whitesmoke;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  height: 200px;
+  flex: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+.left-box {
+  background: goldenrod;
+}
+
+.right-box {
+  background: whitesmoke;
+}
