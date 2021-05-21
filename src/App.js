@@ -1,11 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./Header";
 
 function App() {
+  const headerLinks = [
+    {
+      text: "ONE",
+      href: "https://www.one.com",
+    },
+    {
+      text: "TWO",
+      href: "https://www.two.com",
+    },
+    {
+      text: "THREE",
+      href: "https://www.three.com",
+    },
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
+      <Header links={headerLinks}> </Header>
+      <main>
+        <section>
+          <h1> Welcome to Emil's first website</h1>
+          <p>here you'll find all my development work.</p>
+        </section>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,7 +39,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </main>
     </div>
   );
 }

@@ -3,24 +3,69 @@ body {
   margin: 20px;
 }
 
-.header {
-  padding: 5px;
+header {
+  z-index: 1;
+  /* padding: 5px; */
   width: 100%;
+  height: 2.5em;
   position: fixed;
-  background-color: rgb(187, 187, 187);
+  background-color: rgb(223, 240, 250);
 }
 
-li {
+.headerContent {
+  width: 95%;
+  padding: 0.5em 0;
+  display: inline-block;
+}
+
+/* header > * {
+  display: table;
+  padding: auto 0;
+  height: 100%;
+  background-color: red;
+} */
+
+header ul {
+  display: inline;
+}
+
+header li {
+  /* list-style-type: none; */
+  display: inline-block;
   border: 20px;
-  margin: 5px;
+  margin: 0 10px;
   background-color: #ddd;
 }
 
-li:hover {
-  background-color: #fff;
+.headerTitle {
+  /* margin-top: 4px; */
+  /* margin-right: 100px; */
+  float: left;
+  /*
+  text-align: center;
+  line-height: 100%;
+  height: 100%;
+  padding: 10px; */
+  /* margin: 0;
+  text-align: justify;
+  background-color: #ddd; */
 }
 
-ol, ul {
+main {
+  padding-top: 2.5em;
+}
+
+#search {
+  float: right;
+  /* margin-right: 50px; */
+}
+
+li:hover {
+  background-color: rgb(220, 105, 105);
+}
+
+ol,
+ul {
   padding-left: 30px;
 }
 
@@ -72,5 +117,4 @@ ol, ul {
 }
 
 .reset-button {
-  
 }
