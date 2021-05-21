@@ -15,7 +15,7 @@ function challenge1() {
       <div className="flex-container">
         <section className="box left-box">
           <h2>Monthly subscription</h2>
-          <div style={{ "font-size": "large", display: "inline" }}>29€ </div>
+          <div style={{ fontSize: "large", display: "inline" }}>29€ </div>
           <div style={{ display: "inline" }}>per month</div>
           <p>Full access for less than 110€</p>
           <button

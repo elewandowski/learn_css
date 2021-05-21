@@ -8,10 +8,10 @@ function Search() {
     // return false;
   }
   return (
-    <form class="search" onSubmit={onSubmit}>
+    <form className="search" onSubmit={onSubmit}>
       <input type="text" placeholder="Search.." name="search" />
       <button type="submit">
-        <i class="fa fa-search">Submit</i>
+        <i>Submit</i>
       </button>
     </form>
   );
