@@ -1,10 +1,14 @@
 @font-face {
-  font-family: Karla;
-  src: url("../../fonts/Karla-Light.ttf");
+  font-family: Karla-Regular;
+  src: url("../../fonts/Karla-Regular.ttf");
+}
+@font-face {
+  font-family: Karla-Bold;
+  src: url("../../fonts/Karla-Bold.ttf");
 }
 
 body {
-  font-family: Karla;
+  font-family: Karla-Regular;
 }
 
 .container {
@@ -15,14 +19,6 @@ body {
 }
 
 section {
-  padding: 2em;
-  /* min-width: 300px; */
-}
-
-section.upper {
-  height: 150px;
-  /* background: white; */
-  /* min-width: 300px; */
 }
 
 .upper h1 {
@@ -33,21 +29,20 @@ section.upper {
   color: #d0ea50;
 }
 
+.upper p {
+  color: #c0c3c6;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
 }
 
 .upper .box-content {
-  height: 200px;
-  /* flex: 50%; */
-  /* min-width: 300px; */
-  color: black;
 }
 
 .box-content {
-  /* margin: 0 auto; */
-  max-width: 600px;
+  padding: 2em;
 }
 
 .box {
@@ -55,32 +50,16 @@ section.upper {
   color: white;
 }
 
-/* .lower .box-content {
-  margin: 0 auto;
-  max-width: 200px;
-} */
-
 .signUpButton {
   display: inline;
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   height: 40px;
   border: none;
   background: #bfdf33;
   color: white;
   border-radius: 3px;
 }
-
-/* .signUpButton {
-  display: inline,
-  padding: 0,
-  width: 100%,
-  height: 40px,
-  border: none,
-  background: #bfdf33,
-  color: white,
-  borderRadius: 3px,
-} */
 
 .lower .left {
   background: #2bb2b1;
@@ -92,6 +71,10 @@ section.upper {
   border-radius: 0 0 10px 0;
 }
 
+.lower p {
+  color: #82dddc;
+}
+
 @media screen and (max-width: 600px) {
   .flex-container {
     flex-direction: column;
@@ -99,7 +82,6 @@ section.upper {
   .lower .left {
     border-radius: 0 0 0 0;
   }
-
   .lower .right {
     border-radius: 0 0 10px 10px;
   }
