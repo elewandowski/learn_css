@@ -25,6 +25,8 @@ section.upper {
 
 .left-box {
   background: goldenrod;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .right-box {

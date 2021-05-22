@@ -8,18 +8,34 @@ function Search() {
     // return false;
   }
   return (
-    <form className="search" onSubmit={onSubmit}>
-      <input type="text" placeholder="Search.." name="search" />
-      <button type="submit">
-        <i>Submit</i>
-      </button>
-    </form>
+    <div className="searchContainer">
+      <form className="search" onSubmit={onSubmit}>
+        <input type="text" placeholder="Search.." name="search" />
+        <button type="submit">
+          <i>Submit</i>
+        </button>
+      </form>
+    </div>
   );
 }
+
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    this.links = props.links;
+    this.links = [
+      {
+        text: "ONE",
+        href: "/",
+      },
+      {
+        text: "TWO",
+        href: "/",
+      },
+      {
+        text: "THREE",
+        href: "/",
+      },
+    ];
   }
 
   render() {
@@ -27,13 +43,13 @@ class Header extends React.Component {
       <header>
         <div className="headerContent">
           <div className="headerTitle">Emil's website</div>
-          <Search />
           <nav>
             {this.links.map((element) => {
               console.log(element);
               return <a href={element.href}>{element.text}</a>;
             })}
           </nav>
+          <Search />
         </div>
       </header>
     );

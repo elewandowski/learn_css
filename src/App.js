@@ -1,29 +1,14 @@
 import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
-import Header from "./Header";
-import MainSection from "./MainSection";
-import Challenge1 from "./Challenge1";
+import Header from "./components/Header/Header";
+// import MainSection from "./components/MainSection/MainSection";
+import Challenge1 from "./components/Challenge1/Challenge1";
 
 function App() {
-  const headerLinks = [
-    {
-      text: "ONE",
-      href: "https://www.one.com",
-    },
-    {
-      text: "TWO",
-      href: "https://www.two.com",
-    },
-    {
-      text: "THREE",
-      href: "https://www.three.com",
-    },
-  ];
-
   return (
     <div className="App">
-      <Header links={headerLinks}> </Header>
+      <Header />
       <Challenge1 />
     </div>
   );

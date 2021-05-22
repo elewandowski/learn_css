@@ -1,9 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
 
-import Header from "./components/Header/Header";
 class Square extends React.Component {
   render() {
     return (
@@ -94,6 +90,4 @@ class Game extends React.Component {
   }
 }
 
-// ========================================
-
-ReactDOM.render(<App />, document.getElementById("root"));
+export default Game;
