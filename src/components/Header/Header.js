@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import DropdownMenu from "../Header/DropdownMenu";
 
 function Search() {
   function onSubmit(event) {
@@ -42,7 +43,7 @@ class Header extends React.Component {
     return (
       <header>
         <div className="headerContent">
-          <div className="headerTitle">Emil's website</div>
+          <DropdownMenu>Emil's website</DropdownMenu>
           <nav>
             {this.links.map((element) => {
               console.log(element);

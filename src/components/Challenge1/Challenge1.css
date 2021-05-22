@@ -1,10 +1,36 @@
+@font-face {
+  font-family: Karla;
+  src: url("../../fonts/Karla-Light.ttf");
+}
+
+body {
+  font-family: Karla;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 700px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
 section {
   padding: 2em;
+  /* min-width: 300px; */
 }
 
 section.upper {
-  height: 200px;
-  background: whitesmoke;
+  height: 150px;
+  /* background: white; */
+  /* min-width: 300px; */
+}
+
+.upper h1 {
+  color: hsl(179, 62%, 43%);
+}
+
+.upper h2 {
+  color: #d0ea50;
 }
 
 .flex-container {
@@ -12,23 +38,69 @@ section.upper {
   flex-direction: row;
 }
 
-.box {
+.upper .box-content {
   height: 200px;
-  flex: 50%;
+  /* flex: 50%; */
+  /* min-width: 300px; */
+  color: black;
+}
+
+.box-content {
+  /* margin: 0 auto; */
+  max-width: 600px;
+}
+
+.box {
+  flex: 10%;
+  color: white;
+}
+
+/* .lower .box-content {
+  margin: 0 auto;
+  max-width: 200px;
+} */
+
+.signUpButton {
+  display: inline;
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  border: none;
+  background: #bfdf33;
+  color: white;
+  border-radius: 3px;
+}
+
+/* .signUpButton {
+  display: inline,
+  padding: 0,
+  width: 100%,
+  height: 40px,
+  border: none,
+  background: #bfdf33,
+  color: white,
+  borderRadius: 3px,
+} */
+
+.lower .left {
+  background: #2bb2b1;
+  border-radius: 0 0 0 10px;
+}
+
+.lower .right {
+  background: #49bdbd;
+  border-radius: 0 0 10px 0;
 }
 
 @media screen and (max-width: 600px) {
   .flex-container {
     flex-direction: column;
   }
-}
+  .lower .left {
+    border-radius: 0 0 0 0;
+  }
 
-.left-box {
-  background: goldenrod;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.right-box {
-  background: whitesmoke;
+  .lower .right {
+    border-radius: 0 0 10px 10px;
+  }
 }
