@@ -1,14 +1,14 @@
 import React from "react";
-import "./Title.css";
+import "./TitleSection.css";
 
-class Title extends React.Component {
+class TitleSection extends React.Component {
   constructor(props) {
     super(props);
   }
 
   render() {
     return (
-      <div className="titleContainer">
+      <div className="TitleSection">
         <h1 className="header firstHeader">Reliable, efficient delivery</h1>
         <h1 className="header secondHeader">Powered by technology</h1>
         <p>
@@ -20,4 +20,4 @@ class Title extends React.Component {
   }
 }
 
-export default Title;
+export default TitleSection;

@@ -1,5 +1,6 @@
 import React from "react";
-import Title from "./Title";
+import TitleSection from "./TitleSection";
+import CardSection from "./CardSection";
 
 class Challenge2 extends React.Component {
   constructor(props) {
@@ -7,7 +8,12 @@ class Challenge2 extends React.Component {
   }
 
   render() {
-    return <Title />;
+    return (
+      <div>
+        <TitleSection />
+        <CardSection />
+      </div>
+    );
   }
 }
 

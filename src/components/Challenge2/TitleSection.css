@@ -1,0 +1,25 @@
+@import "./Challenge2.css";
+
+.TitleSection {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 500px;
+}
+
+.header {
+  font-size: min(6vw, 2em);
+  color: #525162;
+}
+
+.firstHeader {
+  font-family: Poppins-Light;
+}
+
+.secondHeader {
+  font-family: Poppins-Bold;
+}
+
+p {
+  font-family: Poppins-Light;
+}
