@@ -6,9 +6,9 @@
 
 .illustrationMockup {
   display: inline-block;
-  margin: 0 2em 0 4em;
-  width: 100%;
-  max-width: 500px;
+  margin: 0 2em 0 0;
+  width: 60%;
+  max-width: 600px;
 }
 
 .upper {
@@ -19,9 +19,17 @@
 }
 
 .textSection {
-  margin: 0 4em 0 2em;
+  /* margin: 0 0 0 2em; */
   max-width: 500px;
   color: white;
+}
+
+button {
+  border: 1 solid grey;
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+  padding: 1em 3em;
 }
 
 .socialLinks {
@@ -31,7 +39,7 @@
 
 .socialLink {
   margin: 0 1em;
-  width: 5vw;
+  width: 20px;
   color: white;
   /* height: 5vh; */
 }
@@ -39,6 +47,7 @@
 @media screen and (max-width: 800px) {
   .illustrationMockup {
     margin: 0;
+    width: 100%;
   }
 
   .textSection {

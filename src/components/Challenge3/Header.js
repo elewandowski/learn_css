@@ -10,7 +10,7 @@ class Header extends React.Component {
   render() {
     return (
       <div className="Header">
-        <img className="logo" src={logo}></img>
+        <img height="40em" className="logo" src={logo}></img>
       </div>
     );
   }

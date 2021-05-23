@@ -1,9 +1,9 @@
 import React from "react";
 import "./ContentSection.css";
 import illustrationMockup from "./assets/illustration-mockups.svg";
-import { ReactComponent as facebookLogo } from "./assets/logo-facebook.svg";
-import twitterLogo from "./assets/logo-twitter.svg";
-import instagramLogo from "./assets/logo-instagram.svg";
+import { ReactComponent as LogoFacebook } from "./assets/logo-facebook.svg";
+import { ReactComponent as LogoTwitter } from "./assets/logo-twitter.svg";
+import { ReactComponent as LogoInstagram } from "./assets/logo-instagram.svg";
 
 class ContentSection extends React.Component {
   render() {
@@ -23,25 +23,23 @@ class ContentSection extends React.Component {
               but so does your audience. Create connections with your users as
               you engage in genuine discussion.
             </p>
+            <button>Register</button>
             <section className="socialLinks">
-              <facebookLogo
-                className="facebookLogo socialLink"
-                src={facebookLogo}
-                width="25px"
-                height="25px"
-              ></facebookLogo>
-              <img
-                className="twitterLogo socialLink"
-                src={twitterLogo}
-                width="25px"
-                height="25px"
-              ></img>
-              <img
-                className="instagramLogo socialLink"
-                src={instagramLogo}
-                width="25px"
-                height="25px"
-              ></img>
+              <LogoFacebook
+                className="LogoFacebook socialLink"
+                fill="#FFFFFF"
+                stroke="#000000"
+              ></LogoFacebook>
+              <LogoTwitter
+                className="LogoTwitter socialLink"
+                fill="#FFFFFF"
+                stroke="#000000"
+              ></LogoTwitter>
+              <LogoInstagram
+                className="LogoInstagram socialLink"
+                fill="#FFFFFF"
+                stroke="#000000"
+              ></LogoInstagram>
             </section>
           </section>
         </div>
