@@ -13,6 +13,19 @@
   src: url("../../fonts/Poppins-Light.ttf");
 }
 
-html {
-  background-color: #fafafa;
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  background-color: #674ab1;
+  background-image: url("./assets/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Challenge3 {
+  /* width: 100; */
 }

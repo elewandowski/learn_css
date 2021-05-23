@@ -1,0 +1,11 @@
+@import "./Challenge3.css";
+
+.illustrationMockup {
+}
+
+@media screen and (max-width: 800px) {
+  td {
+    display: block;
+    padding: 0;
+  }
+}

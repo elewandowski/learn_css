@@ -1,6 +1,6 @@
 import React from "react";
-import TitleSection from "./TitleSection";
-import CardSection from "./CardSection";
+import Header from "./Header";
+import ImageSection from "./ImageSection";
 
 class Challenge3 extends React.Component {
   constructor(props) {
@@ -9,9 +9,8 @@ class Challenge3 extends React.Component {
 
   render() {
     return (
-      <div>
-        <TitleSection />
-        <CardSection />
+      <div className="Challenge3">
+        <Header />
       </div>
     );
   }
