@@ -1,0 +1,50 @@
+@import "./Challenge3.css";
+
+.Content {
+  margin: 0 5em;
+}
+
+.illustrationMockup {
+  display: inline-block;
+  margin: 0 2em 0 4em;
+  width: 100%;
+  max-width: 500px;
+}
+
+.upper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.textSection {
+  margin: 0 4em 0 2em;
+  max-width: 500px;
+  color: white;
+}
+
+.socialLinks {
+  margin-top: 5em;
+  text-align: right;
+}
+
+.socialLink {
+  margin: 0 1em;
+  width: 5vw;
+  color: white;
+  /* height: 5vh; */
+}
+
+@media screen and (max-width: 800px) {
+  .illustrationMockup {
+    margin: 0;
+  }
+
+  .textSection {
+    margin: 0;
+  }
+  .upper {
+    flex-direction: column;
+  }
+}

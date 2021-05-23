@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import ImageSection from "./ImageSection";
+import ContentSection from "./ContentSection";
 
 class Challenge3 extends React.Component {
   constructor(props) {
@@ -11,6 +11,7 @@ class Challenge3 extends React.Component {
     return (
       <div className="Challenge3">
         <Header />
+        <ContentSection />
       </div>
     );
   }
