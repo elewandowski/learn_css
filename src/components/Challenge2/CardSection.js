@@ -1,6 +1,5 @@
 import React from "react";
 import "./CardSection.css";
-import "../../assets/icon-calculator.svg";
 
 class Card extends React.Component {
   render(props) {
@@ -30,26 +29,26 @@ class CardSection extends React.Component {
               <Card
                 title="Supervisor"
                 text="Monitors activity to identify project roadblocks "
-                svgPath="./icon-supervisor.svg"
+                svgPath="./icons/icon-supervisor.svg"
               ></Card>
             </td>
             <td>
               <Card
                 title="Team Builder"
                 text="Scans our talent network to create the optimal team for your project"
-                svgPath="./icon-team-builder.svg"
+                svgPath="./icons/icon-team-builder.svg"
               ></Card>
               <Card
                 title="Karma"
                 text="Regularly evaluates our talent to ensure quality"
-                svgPath="./icon-karma.svg"
+                svgPath="./icons/icon-karma.svg"
               ></Card>
             </td>
             <td>
               <Card
                 title="Calculator"
                 text="Uses data from past projects to provide better delivery estimates"
-                svgPath="./icon-calculator.svg"
+                svgPath="./icons/icon-calculator.svg"
               ></Card>
             </td>
           </tr>
