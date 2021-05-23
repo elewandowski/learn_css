@@ -9,14 +9,14 @@ class ContentSection extends React.Component {
   render() {
     return (
       <div className="Content">
-        <div className="upper">
-          <img
-            className="illustrationMockup"
-            src={illustrationMockup}
-            // width="600vw"
-            // height="400vh"
-          ></img>
-          <section className="textSection">
+        <img
+          className="illustrationMockup"
+          src={illustrationMockup}
+          // width="600vw"
+          // height="400vh"
+        ></img>
+        <section className="detailsSection">
+          <div className="textSection">
             <h1>Build The Community Your Fans Will Love</h1>
             <p>
               Huddle re-imagines the way we build communities. You have a voice,
@@ -24,25 +24,25 @@ class ContentSection extends React.Component {
               you engage in genuine discussion.
             </p>
             <button>Register</button>
-            <section className="socialLinks">
-              <LogoFacebook
-                className="LogoFacebook socialLink"
-                fill="#FFFFFF"
-                stroke="#000000"
-              ></LogoFacebook>
-              <LogoTwitter
-                className="LogoTwitter socialLink"
-                fill="#FFFFFF"
-                stroke="#000000"
-              ></LogoTwitter>
-              <LogoInstagram
-                className="LogoInstagram socialLink"
-                fill="#FFFFFF"
-                stroke="#000000"
-              ></LogoInstagram>
-            </section>
+          </div>
+          <section className="socialLinks">
+            <LogoFacebook
+              className="LogoFacebook socialLink"
+              fill="#FFFFFF"
+              stroke="#000000"
+            ></LogoFacebook>
+            <LogoTwitter
+              className="LogoTwitter socialLink"
+              fill="#FFFFFF"
+              stroke="#000000"
+            ></LogoTwitter>
+            <LogoInstagram
+              className="LogoInstagram socialLink"
+              fill="#FFFFFF"
+              stroke="#000000"
+            ></LogoInstagram>
           </section>
-        </div>
+        </section>
       </div>
     );
   }
