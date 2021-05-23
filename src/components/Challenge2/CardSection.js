@@ -29,26 +29,26 @@ class CardSection extends React.Component {
               <Card
                 title="Supervisor"
                 text="Monitors activity to identify project roadblocks "
-                svgPath="./icons/icon-supervisor.svg"
+                svgPath="./challenge2/icons/icon-supervisor.svg"
               ></Card>
             </td>
             <td>
               <Card
                 title="Team Builder"
                 text="Scans our talent network to create the optimal team for your project"
-                svgPath="./icons/icon-team-builder.svg"
+                svgPath="./challenge2/icons/icon-team-builder.svg"
               ></Card>
               <Card
                 title="Karma"
                 text="Regularly evaluates our talent to ensure quality"
-                svgPath="./icons/icon-karma.svg"
+                svgPath="./challenge2/icons/icon-karma.svg"
               ></Card>
             </td>
             <td>
               <Card
                 title="Calculator"
                 text="Uses data from past projects to provide better delivery estimates"
-                svgPath="./icons/icon-calculator.svg"
+                svgPath="./challenge2/icons/icon-calculator.svg"
               ></Card>
             </td>
           </tr>
