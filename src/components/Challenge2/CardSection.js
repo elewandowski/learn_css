@@ -9,7 +9,7 @@ class Card extends React.Component {
         <h1>{this.props.title}</h1>
         <p>{this.props.text}</p>
         <div style={{ textAlign: "right" }}>
-          <img src={this.props.svgPath}></img>
+          <img src={this.props.svgPath} height="50px" width="50px"></img>
         </div>
       </div>
     );
