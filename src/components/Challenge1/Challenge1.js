@@ -1,7 +1,7 @@
 import React from "react";
 import "./Challenge1.css";
 
-function challenge1() {
+function Challenge1() {
   return (
     <main>
       <div className="container">
@@ -41,4 +41,4 @@ function challenge1() {
   );
 }
 
-export default challenge1;
+export default Challenge1;
